@@ -1,4 +1,6 @@
+import 'package:codinbank/components/sections/account_actions.dart';
 import 'package:codinbank/components/sections/header.dart';
+import 'package:codinbank/components/sections/recent_activity.dart';
 import 'package:flutter/material.dart';
 import '../components/box_card.dart';
 
@@ -11,7 +13,8 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           Header(),
-          BoxCard(content: Text('Oie')),
+         RecentActivity(),
+          AccountActions(),
         ],
       ),
     );

@@ -20,7 +20,7 @@ class Header extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('\$5000', style: TextStyle(fontSize: 28)),
+                Text('\$ 5000', style: TextStyle(fontSize: 28)),
                 Text('Balanço Disponível'),
               ],
             ),
