@@ -12,7 +12,7 @@ class Codinbank extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Codinbank',
-      home: Home(),
+      home: const Home(),
       theme:
           ThemeData(primarySwatch: Colors.purple, brightness: Brightness.dark),
     );

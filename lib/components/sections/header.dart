@@ -8,7 +8,7 @@ class Header extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.purple[400],
-        borderRadius: BorderRadius.vertical(
+        borderRadius: const BorderRadius.vertical(
             bottom: Radius.circular(10)
         ),
       ),
@@ -19,12 +19,12 @@ class Header extends StatelessWidget {
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text('\$ 5000', style: TextStyle(fontSize: 28)),
                 Text('Balanço Disponível'),
               ],
             ),
-            Icon(
+            const Icon(
               Icons.account_circle,
               size: 42,
             ),
