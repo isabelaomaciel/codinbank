@@ -11,8 +11,8 @@ class AccountActions extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
             child: Text(
               'Ações da conta',
               style: TextStyle(fontSize: 20),
@@ -20,7 +20,7 @@ class AccountActions extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               BoxCard(
                   content: _AccountActionsContent(
                 icon: Icon(Icons.account_balance_wallet),
@@ -56,7 +56,7 @@ class _AccountActionsContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 70,
       child: Column(
         children: [

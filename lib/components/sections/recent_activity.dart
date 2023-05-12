@@ -6,8 +6,8 @@ class RecentActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
+    return const Padding(
+      padding: EdgeInsets.all(16.0),
       child: BoxCard(content: _RecentActivityContent()),
     );
   }
@@ -21,19 +21,20 @@ class _RecentActivityContent extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Total Gasto'),
-        Text(
+        const Text(
           '\$ 9900,97',
           style: TextStyle(fontSize: 28),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+        const Text('Total Gasto'),
+
+        const Padding(
+          padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
           child: Text(
               'Este mês você gastou \$ 1500 com jogos. Tente abaixar este custo!'),
         ),
         TextButton(
           onPressed: () {},
-          child: Text('Diga-me como'),
+          child: const Text('Diga-me como'),
         ),
       ],
     );
